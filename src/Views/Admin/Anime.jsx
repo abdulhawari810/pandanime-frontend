@@ -42,7 +42,7 @@ export default function Animes() {
     newGenres[index] = value;
     setGenres(newGenres);
   };
-  const base = "http://localhost:3000/anime";
+  const base = "https://pandanime-backend-production.up.railway.app/anime";
 
   const handleAddAnime = async (e) => {
     e.preventDefault();

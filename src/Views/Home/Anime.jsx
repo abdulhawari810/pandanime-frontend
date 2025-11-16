@@ -23,7 +23,7 @@ export default function Anime() {
   const [filter, setFilter] = useState(() => {
     return localStorage.getItem("animeFilter") || "Semua";
   });
-  const base = "http://localhost:3000/anime";
+  const base = "https://pandanime-backend-production.up.railway.app/anime";
 
   const fetch = async (url) => {
     const res = await axios.get(url);

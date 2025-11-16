@@ -9,7 +9,7 @@ export default function Register() {
   const [password, setPassword] = useState("");
   const [confPassword, setConfPassword] = useState("");
 
-  const baseURL = "http://localhost:3000/";
+  const baseURL = "https://pandanime-backend-production.up.railway.app/";
   const nav = useNavigate();
 
   const handleRegister = async (e) => {

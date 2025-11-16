@@ -8,7 +8,7 @@ import { useAuth } from "../../Context/AuthContext";
 
 export default function Episode() {
   const { userId, slug } = useParams();
-  const base = "http://localhost:3000/";
+  const base = "https://pandanime-backend-production.up.railway.app/";
   const { user } = useAuth();
   const [hasWatched, setHasWatched] = useState(false);
   const [eps, setEps] = useState([]);

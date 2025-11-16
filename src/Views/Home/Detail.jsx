@@ -28,7 +28,7 @@ export default function Detail() {
   const [displayedEps, setDisplayedEps] = useState([]); // <-- Episode yang ditampilkan saat ini
   const [page, setPage] = useState(1); // <-- Halaman saat ini
   const [limit] = useState(10);
-  const base = "http://localhost:3000/";
+  const base = "https://pandanime-backend-production.up.railway.app/";
 
   useEffect(() => {
     if (eps.length > 0) {
@@ -58,7 +58,7 @@ export default function Detail() {
   };
 
   const { data, error, isLoading } = useSWR(
-    `http://localhost:3000/Anime/${id}`,
+    `https://pandanime-backend-production.up.railway.app/Anime/${id}`,
     fetcher
   );
 
