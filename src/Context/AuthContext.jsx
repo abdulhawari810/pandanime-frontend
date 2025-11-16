@@ -13,11 +13,7 @@ export const AuthProvider = ({ children }) => {
 
   // konfigurasi axios agar kirim cookie otomatis
   const axiosInstance = axios.create({
-<<<<<<< HEAD
     baseURL: "https://pandanime-backend-production.up.railway.app/",
-=======
-    baseURL: "https://pandanime-backend-production.up.railway.app:3000/",
->>>>>>> 80373389c7a9da757a4f274fbb4212bba873758c
     withCredentials: true, // penting: kirim cookie httpOnly
   });
 
