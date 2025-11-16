@@ -23,9 +23,14 @@ export default function Navbar({ layout }) {
   ]);
   const { user, logout } = useAuth();
 
+<<<<<<< HEAD
   const baseURL =
     "https://pandanime-backend-production.up.railway.app/anime/search";
   const base = "https://pandanime-backend-production.up.railway.app/users";
+=======
+  const baseURL = "https://pandanime-backend-production.up.railway.app/anime/search";
+  const base = "https://pandanime-backend-production.up.railway.app:3000/users";
+>>>>>>> 80373389c7a9da757a4f274fbb4212bba873758c
 
   useEffect(() => {
     const fetchData = async () => {
