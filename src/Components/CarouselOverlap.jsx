@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 
 // Fetcher SWR
 const fetcher = async () => {
-  const res = await axios.get("http://localhost:3000/anime/Carousel");
+  const res = await axios.get("https://pandanime-backend-production.up.railway.app:3000/anime/Carousel");
   return res.data.anime;
 };
 
